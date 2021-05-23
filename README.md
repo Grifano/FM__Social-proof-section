@@ -3,7 +3,7 @@
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
-## Table of contents ❗️
+## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -15,7 +15,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+<!-- - [Acknowledgments](#acknowledgments) -->
 
 ## Overview
 
@@ -25,50 +25,69 @@ Users should be able to:
 
 - View the optimal layout for the section depending on their device's screen size
 
-### Screenshot ❗️
+### Screenshot
 
 ![](./images/ScreenShot.jpg)
 
-### Links ❗️
+### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-social-proof-section-mrMgjHgMQ)
+- Live Site URL: [Live](https://grifano.github.io/FrontendMentor__Social-proof-section/)
 
 ## My process
 
-### Built with ❗️
+### Built with
 
 - Semantic HTML5 markup
-- JavaScript
 - CSS custom properties
 - Flexbox
-- Responsive images
 - Responsive Website
+- Media Queries
+- SASS/SCSS
 
-### What I learned ❗️
+### What I learned
 
-Using "picture" tag, browser know what image should to load depending on viewport width 😀
+I’m not Sure about "aside" for attribution 🤔... What can you think? Isn’t right way?
 ```html
 
-```
+  <aside class="attribution">
+    <p class="attribution__text">Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a></p>
+    <p class="attribution__text">
+      Coded by <a href="#">Serhii <span class="grifano-logo"><span>{</span>Grifano<span>}</span></span> Orlenko</a>
+    </p>
+  </aside>
 
-I decide to create a custom arrow for tab headers Instead to use a svg. But I was wondering is that very complicated? Off Course a easy way is to use svg as a background image
+```
+I read an amazing article about using CSS selectors, and applied this knowledge to practice 😀
 ```css
-
-```
-
-And this part is not clearly Understand For me. Why in if condition don't use an equal operator? It supposes if activeTab is true then run a code, but why activeTab Should be "true"? 
-```js
-
+&__item {
+  max-width: 509px;
+  &:nth-child(1) {
+    align-self: flex-start;
+  }
+  &:nth-child(2) {
+    margin: 15px 0;
+    align-self: center;
+  }
+  &:nth-child(3) {
+    align-self: flex-end;
+  }
+  @media (max-width: 769px) {
+    max-width: none;
+  }
+}
 ```
 
 ### Continued development
 
 I want to continue to learn a JavaScript. Currently, I'm working on Course from Udemy. App Brewery Web Developer Bootcamp. And to do practice, practice and practice one more 😉
 
-### Useful resources ❗️
+### Useful resources
 
-[Resource title](link)
+[How to Use CSS Selectors to Style Your Web Page](https://www.freecodecamp.org/news/use-css-selectors-to-style-webpage/)
+[MDN:Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
+
 
 
 ## Author
@@ -78,4 +97,4 @@ I want to continue to learn a JavaScript. Currently, I'm working on Course from 
 - Twitter - [@Grifano](https://twitter.com/OrlenkoSerhii)
 - LinkedIn - [@Grifano](https://www.linkedin.com/in/serhii-orlenko-44aaa4a3/)
 
-## Acknowledgments ❗️
+<!-- ## Acknowledgments ❗️ -->
