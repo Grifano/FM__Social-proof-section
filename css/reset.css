@@ -78,7 +78,9 @@ video {
 	vertical-align: baseline;
 	background: transparent;
 }
-
+* {
+	box-sizing: border-box;
+}
 body {
 	line-height: 1;
 }
